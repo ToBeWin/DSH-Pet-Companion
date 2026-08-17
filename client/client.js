@@ -22,6 +22,10 @@ window.__ModuleLoader__.load({
       { id: 'red-panda', key: 'redPanda' },
       { id: 'fox', key: 'fox' },
       { id: 'panda', key: 'panda' },
+      { id: 'golden-retriever', key: 'goldenRetriever' },
+      { id: 'koala', key: 'koala' },
+      { id: 'duckling', key: 'duckling' },
+      { id: 'raccoon', key: 'raccoon' },
     ];
     const defaults = Object.freeze({ enabled: true, pet: 'beaver', size: 'normal', side: 'right', animated: true });
 
@@ -43,6 +47,10 @@ window.__ModuleLoader__.load({
       redPanda: '枫糖小熊猫', 'redPanda.detail': '蓬松大尾巴的暖色小熊猫',
       fox: '雪团北极狐', 'fox.detail': '带着冰蓝光晕的白色小狐狸',
       panda: '竹叶熊猫', 'panda.detail': '抱着竹叶、笑眯眯的小熊猫',
+      goldenRetriever: '奶油金毛', 'goldenRetriever.detail': '挥着小爪子欢迎你的金毛',
+      koala: '桉叶考拉', 'koala.detail': '抱着桉叶、慢悠悠的治愈考拉',
+      duckling: '阳光小鸭', 'duckling.detail': '张开小翅膀的明黄小鸭子',
+      raccoon: '条纹浣熊', 'raccoon.detail': '带着蓬松大尾巴的俏皮浣熊',
       quickHide: '暂时隐藏萌宠', quickShow: '显示萌宠伴侣', petLabel: '萌宠伴侣',
     };
     const en = {
@@ -63,6 +71,10 @@ window.__ModuleLoader__.load({
       redPanda: 'Maple Red Panda', 'redPanda.detail': 'A warm red panda with a fluffy tail',
       fox: 'Snow Fox', 'fox.detail': 'An arctic fox with a soft ice-blue glow',
       panda: 'Bamboo Panda', 'panda.detail': 'A happy panda holding a bamboo sprig',
+      goldenRetriever: 'Golden Retriever', 'goldenRetriever.detail': 'A golden puppy waving a cheerful hello',
+      koala: 'Eucalyptus Koala', 'koala.detail': 'A calming koala holding a eucalyptus sprig',
+      duckling: 'Sunshine Duckling', 'duckling.detail': 'A sunny duckling with open little wings',
+      raccoon: 'Stripe Raccoon', 'raccoon.detail': 'A playful raccoon with a fluffy striped tail',
       quickHide: 'Hide pet for now', quickShow: 'Show Pet Companion', petLabel: 'Pet Companion',
     };
 

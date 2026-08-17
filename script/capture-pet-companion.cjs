@@ -32,7 +32,7 @@ app.whenReady().then(async () => {
     templates: document.querySelectorAll('.tobewin-pet-card').length,
   })`);
   if (!initial.settings || !initial.dock) throw new Error(`Initial pet render failed: ${JSON.stringify(initial)}`);
-  if (initial.templates !== 12) throw new Error(`Expected 12 pet templates, got ${initial.templates}`);
+  if (initial.templates !== 16) throw new Error(`Expected 16 pet templates, got ${initial.templates}`);
   if (!await clickText(window, ['Cloud Cat', '云朵猫'])) throw new Error('Cloud Cat pet card was not found');
   await delay(100);
   const cat = await window.webContents.executeJavaScript(`document.querySelector('.tobewin-pet-layer')?.dataset.pet`);
