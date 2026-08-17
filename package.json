@@ -35,7 +35,7 @@
     }
   },
   "scripts": {
-    "build": "rm -rf lib && tsc -p tsconfig.json && cp client/client.js lib/client.js",
+    "build": "rm -rf lib && tsc -p tsconfig.json && cp client/client.js lib/client.js && node script/embed-pet-assets.cjs",
     "check": "tsc --noEmit",
     "qa:capture": "../dsh-desktop/node_modules/.bin/electron script/capture-pet-companion.cjs",
     "prepack": "pnpm build"

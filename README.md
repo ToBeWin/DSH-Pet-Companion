@@ -6,10 +6,10 @@ An animated, local-only desktop pet for [DeepSeek Harness](https://github.com/de
 
 ## Features / 功能
 
-- Four original animated templates: Momo Beaver, Cloud Cat, Peach Axolotl, and Dango Shiba.
-- Idle animation, blinking and subtle reactions; reduced-motion preferences are respected.
+- Four original, high-resolution mascot templates: Momo Beaver, Cloud Cat, Peach Axolotl, and Dango Shiba.
+- Gentle floating, breathing, and ambient-light motion; reduced-motion preferences are respected.
 - Select a pet, dock it left or right, choose its size, pause animation, or hide/show it.
-- A quick hide button appears beside the pet; all controls are also available in General Settings.
+- A quick hide button appears beside the pet; all controls are available in the dedicated Pet Companion settings section.
 - Automatically follows DeepSeek Harness light/dark theme and Chinese/English settings.
 
 ## Install / 安装
@@ -18,9 +18,9 @@ An animated, local-only desktop pet for [DeepSeek Harness](https://github.com/de
 npm install @tobewin/dsh-pet-companion
 ```
 
-Install it through DeepSeek Harness Plugin Market, then restart Harness if prompted. Open **Settings → General → Pet Companion** to configure it.
+Install it through DeepSeek Harness Plugin Market, then restart Harness if prompted. Open **Settings → Pet Companion** to configure it.
 
-通过 DeepSeek Harness 的插件市场安装，按提示重启后，在 **设置 → 通用设置 → 萌宠伴侣** 中配置。
+通过 DeepSeek Harness 的插件市场安装，按提示重启后，在 **设置 → 萌宠伴侣** 中配置。
 
 ## Development / 开发
 
@@ -32,6 +32,6 @@ pnpm build
 
 ## Compatibility and privacy / 兼容性与隐私
 
-The pet is a plugin-owned, non-interactive floating layer. It is attached and removed by this plugin alone and does not query private Harness DOM or patch official files. Preferences use `localStorage` only; no network requests or telemetry are made.
+The pet is a plugin-owned, non-interactive floating layer. Original mascot artwork is packaged locally with the plugin; no external asset URLs are used. The layer is attached and removed by this plugin alone and does not query private Harness DOM or patch official files. Preferences use `localStorage` only; no network requests or telemetry are made.
 
-萌宠是插件自有的非交互悬浮层，由插件自行创建和销毁；不会查询 Harness 私有 DOM，也不会修改官方文件。配置仅存于本地 `localStorage`，不发送网络请求或遥测数据。
+萌宠是插件自有的非交互悬浮层；原创角色素材随插件本地打包，不使用外部图片链接。它由插件自行创建和销毁，不会查询 Harness 私有 DOM，也不会修改官方文件。配置仅存于本地 `localStorage`，不发送网络请求或遥测数据。
