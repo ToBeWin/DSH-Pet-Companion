@@ -8,6 +8,7 @@ An animated, local-only desktop pet for [DeepSeek Harness](https://github.com/de
 
 - Sixteen original, high-resolution mascot templates: beaver, cats, dogs, rabbit, hamster, otter, penguins, foxes, red panda, panda, koala, duckling, and raccoon.
 - Gentle floating, breathing, and ambient-light motion; reduced-motion preferences are respected.
+- Hover over or click the pet for a short, random greeting; greetings follow the Harness Chinese/English locale.
 - Select a pet, dock it left or right, choose its size, pause animation, or hide/show it.
 - A quick hide button appears beside the pet; all controls are available in the dedicated Pet Companion settings section.
 - Automatically follows DeepSeek Harness light/dark theme and Chinese/English settings.

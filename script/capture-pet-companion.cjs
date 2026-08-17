@@ -33,6 +33,13 @@ app.whenReady().then(async () => {
   })`);
   if (!initial.settings || !initial.dock) throw new Error(`Initial pet render failed: ${JSON.stringify(initial)}`);
   if (initial.templates !== 16) throw new Error(`Expected 16 pet templates, got ${initial.templates}`);
+  const layout = await window.webContents.executeJavaScript(`(() => {
+    const cards = [...document.querySelectorAll('.tobewin-pet-card')];
+    const grid = document.querySelector('.tobewin-pet-grid');
+    const gridBounds = grid?.getBoundingClientRect();
+    return { gridWidth: gridBounds?.width || 0, cards: cards.map((card) => { const box = card.getBoundingClientRect(); const art = card.querySelector('.tobewin-pet-card-art')?.getBoundingClientRect(); return { width: box.width, height: box.height, artWidth: art?.width || 0, artHeight: art?.height || 0 }; }) };
+  })()`);
+  if (!layout.cards.every((card) => card.height <= 90 && card.width <= layout.gridWidth && card.artWidth <= 72.5 && card.artHeight <= 72.5)) throw new Error(`Pet card layout overflowed: ${JSON.stringify(layout)}`);
   if (!await clickText(window, ['Cloud Cat', '云朵猫'])) throw new Error('Cloud Cat pet card was not found');
   await delay(100);
   const cat = await window.webContents.executeJavaScript(`document.querySelector('.tobewin-pet-layer')?.dataset.pet`);
@@ -49,6 +56,10 @@ app.whenReady().then(async () => {
   await delay(120);
   const visibleAgain = await window.webContents.executeJavaScript(`Boolean(document.querySelector('.tobewin-pet-dock'))`);
   if (!visibleAgain) throw new Error('Pet could not be restored with the quick reopen control');
+  await window.webContents.executeJavaScript(`document.querySelector('.tobewin-pet-dock').dispatchEvent(new MouseEvent('mouseenter', { bubbles: true }))`);
+  await delay(80);
+  const greeting = await window.webContents.executeJavaScript(`(() => { const node = document.querySelector('.tobewin-pet-greeting'); return { visible: node?.dataset.visible, text: node?.textContent?.trim() }; })()`);
+  if (greeting.visible !== 'true' || !greeting.text) throw new Error(`Pet greeting did not appear: ${JSON.stringify(greeting)}`);
   window.webContents.sendInputEvent({ type: 'keyDown', keyCode: 'ESC' });
   window.webContents.sendInputEvent({ type: 'keyUp', keyCode: 'ESC' });
   await delay(240);
