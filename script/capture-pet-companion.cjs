@@ -24,6 +24,8 @@ app.whenReady().then(async () => {
   await delay(260);
   if (!await clickText(window, ['Settings', '设置'])) throw new Error('Settings entry was not found');
   await delay(420);
+  if (!await clickText(window, ['Pet Companion', '萌宠伴侣'])) throw new Error('Pet Companion settings section was not found');
+  await delay(260);
   const initial = await window.webContents.executeJavaScript(`({
     settings: document.body.innerText.includes('Pet Companion') || document.body.innerText.includes('萌宠伴侣'),
     dock: Boolean(document.querySelector('.tobewin-pet-dock')),

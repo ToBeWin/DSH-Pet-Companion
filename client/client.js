@@ -205,8 +205,12 @@ window.__ModuleLoader__.load({
         render();
         return () => { stopStore(); stopLocale(); layer.dispose(); };
       }, 'dsh-pet-companion: floating pet');
-      ctx.slots.inject('settings.general.item', () => ctx.slots.register({
-        name: 'settings.general.item', id: 'tobewin-pet-companion', order: 30, locale: NS,
+      ctx.slots.inject('settings.section', () => ctx.slots.register({
+        name: 'settings.section',
+        id: 'tobewin-pet-companion',
+        order: 18,
+        label: () => ctx.locale.bind(NS)('title'),
+        locale: NS,
         inject: () => ({ locale: ctx.locale, store }),
       }, PetSettings));
     }
