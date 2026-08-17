@@ -14,6 +14,14 @@ window.__ModuleLoader__.load({
       { id: 'cat', key: 'cat' },
       { id: 'axolotl', key: 'axolotl' },
       { id: 'shiba', key: 'shiba' },
+      { id: 'rabbit', key: 'rabbit' },
+      { id: 'corgi', key: 'corgi' },
+      { id: 'hamster', key: 'hamster' },
+      { id: 'otter', key: 'otter' },
+      { id: 'penguin', key: 'penguin' },
+      { id: 'red-panda', key: 'redPanda' },
+      { id: 'fox', key: 'fox' },
+      { id: 'panda', key: 'panda' },
     ];
     const defaults = Object.freeze({ enabled: true, pet: 'beaver', size: 'normal', side: 'right', animated: true });
 
@@ -27,6 +35,14 @@ window.__ModuleLoader__.load({
       cat: '云朵猫', 'cat.detail': '轻盈蓬松的薰衣草云端猫咪',
       axolotl: '桃子六角', 'axolotl.detail': '软萌好奇的粉色水精灵',
       shiba: '丸子柴', 'shiba.detail': '元气满满的焦糖小柴犬',
+      rabbit: '奶油兔', 'rabbit.detail': '耳朵软软的奶油垂耳兔',
+      corgi: '饼干柯基', 'corgi.detail': '大耳朵、爱笑的元气小狗',
+      hamster: '焦糖仓鼠', 'hamster.detail': '圆滚滚、脸颊鼓鼓的小仓鼠',
+      otter: '可可海獭', 'otter.detail': '抱着小爪子安静陪伴的海獭',
+      penguin: '诺里企鹅', 'penguin.detail': '张开小翅膀欢迎你的企鹅',
+      redPanda: '枫糖小熊猫', 'redPanda.detail': '蓬松大尾巴的暖色小熊猫',
+      fox: '雪团北极狐', 'fox.detail': '带着冰蓝光晕的白色小狐狸',
+      panda: '竹叶熊猫', 'panda.detail': '抱着竹叶、笑眯眯的小熊猫',
       quickHide: '暂时隐藏萌宠', quickShow: '显示萌宠伴侣', petLabel: '萌宠伴侣',
     };
     const en = {
@@ -39,6 +55,14 @@ window.__ModuleLoader__.load({
       cat: 'Cloud Cat', 'cat.detail': 'A soft lavender cat from the clouds',
       axolotl: 'Peach Axolotl', 'axolotl.detail': 'A curious little rosy water sprite',
       shiba: 'Dango Shiba', 'shiba.detail': 'A spirited caramel shiba that cheers you on',
+      rabbit: 'Cream Bunny', 'rabbit.detail': 'A soft-eared cream lop rabbit',
+      corgi: 'Biscuit Corgi', 'corgi.detail': 'A bright puppy with big happy ears',
+      hamster: 'Caramel Hamster', 'hamster.detail': 'A round little hamster with rosy paws',
+      otter: 'Cocoa Otter', 'otter.detail': 'A gentle otter holding its little paws close',
+      penguin: 'Nori Penguin', 'penguin.detail': 'A welcoming penguin with open flippers',
+      redPanda: 'Maple Red Panda', 'redPanda.detail': 'A warm red panda with a fluffy tail',
+      fox: 'Snow Fox', 'fox.detail': 'An arctic fox with a soft ice-blue glow',
+      panda: 'Bamboo Panda', 'panda.detail': 'A happy panda holding a bamboo sprig',
       quickHide: 'Hide pet for now', quickShow: 'Show Pet Companion', petLabel: 'Pet Companion',
     };
 

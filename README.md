@@ -6,7 +6,7 @@ An animated, local-only desktop pet for [DeepSeek Harness](https://github.com/de
 
 ## Features / 功能
 
-- Four original, high-resolution mascot templates: Momo Beaver, Cloud Cat, Peach Axolotl, and Dango Shiba.
+- Twelve original, high-resolution mascot templates: beaver, cats, dogs, rabbit, hamster, otter, penguins, foxes, red panda, and panda.
 - Gentle floating, breathing, and ambient-light motion; reduced-motion preferences are respected.
 - Select a pet, dock it left or right, choose its size, pause animation, or hide/show it.
 - A quick hide button appears beside the pet; all controls are available in the dedicated Pet Companion settings section.

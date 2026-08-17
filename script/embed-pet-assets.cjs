@@ -3,7 +3,7 @@ const { join } = require('node:path');
 
 const root = join(__dirname, '..');
 const output = join(root, 'lib', 'client.js');
-const assets = Object.fromEntries(['beaver', 'cat', 'axolotl', 'shiba'].map((id) => [
+const assets = Object.fromEntries(['beaver', 'cat', 'axolotl', 'shiba', 'rabbit', 'corgi', 'hamster', 'otter', 'penguin', 'red-panda', 'fox', 'panda'].map((id) => [
   id,
   `data:image/png;base64,${readFileSync(join(root, 'client', 'assets', `${id}.png`)).toString('base64')}`,
 ]));
