@@ -15,6 +15,16 @@ An animated, local-only desktop pet for [DeepSeek Harness](https://github.com/de
 
 为 DeepSeek Harness 提供一个可爱的动态桌面萌宠。所有设置只保存在当前浏览器，本插件只使用公开的 Settings、Locale 和 UI Primitives 接口，不修改或依赖 Harness 源码。
 
+## See it in Harness / 实际效果
+
+Hover over or click the companion and it responds with a short greeting in the current Harness language.
+
+将鼠标悬停在萌宠上或点击萌宠，它会使用当前 Harness 语言送上一句随机问候。
+
+<p align="center">
+  <img src="docs/images/pet-companion-applied.png" alt="A corgi pet companion greeting the user inside DeepSeek Harness" width="96%">
+</p>
+
 ## Meet the companions / 认识萌宠
 
 <p align="center">
