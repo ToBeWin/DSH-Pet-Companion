@@ -1,8 +1,33 @@
-# DSH Pet Companion / DSH 萌宠伴侣
+<h1 align="center">DSH Pet Companion · DSH 萌宠伴侣</h1>
+
+<p align="center">Sixteen tiny companions to make long agent runs feel a little warmer.</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@tobewin/dsh-pet-companion"><img src="https://img.shields.io/npm/v/@tobewin/dsh-pet-companion?color=2563eb&label=npm" alt="npm version"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-111827" alt="MIT license"></a>
+  <img src="https://img.shields.io/badge/characters-16-f59e0b" alt="Sixteen characters">
+  <img src="https://img.shields.io/badge/assets-local--only-0f766e" alt="Local-only assets">
+</p>
+
+<p align="center"><a href="#quick-start--快速开始">Quick start</a> · <a href="#features--功能">功能</a> · <a href="https://github.com/ToBeWin/DSH-Plugin-Market">All ToBeWin plugins</a></p>
 
 An animated, local-only desktop pet for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness).
 
 为 DeepSeek Harness 提供一个可爱的动态桌面萌宠。所有设置只保存在当前浏览器，本插件只使用公开的 Settings、Locale 和 UI Primitives 接口，不修改或依赖 Harness 源码。
+
+## Meet the companions / 认识萌宠
+
+<p align="center">
+  <img src="client/assets/beaver.png" alt="Beaver companion" width="180">
+  &nbsp;&nbsp;
+  <img src="client/assets/cat.png" alt="Cloud cat companion" width="180">
+  &nbsp;&nbsp;
+  <img src="client/assets/axolotl.png" alt="Axolotl companion" width="180">
+  &nbsp;&nbsp;
+  <img src="client/assets/corgi.png" alt="Corgi companion" width="180">
+</p>
+
+<p align="center"><strong>Beaver · Cloud Cat · Axolotl · Corgi</strong><br>Plus twelve more local characters, each with motion and bilingual greetings.<br>另有 12 个本地角色，每个角色都带有动态效果和中英文问候语。</p>
 
 ## Features / 功能
 
@@ -13,10 +38,10 @@ An animated, local-only desktop pet for [DeepSeek Harness](https://github.com/de
 - A quick hide button appears beside the pet; all controls are available in the dedicated Pet Companion settings section.
 - Automatically follows DeepSeek Harness light/dark theme and Chinese/English settings.
 
-## Install / 安装
+## Quick start / 快速开始
 
 ```bash
-npm install @tobewin/dsh-pet-companion
+dsh plugin --profile web add @tobewin/dsh-pet-companion
 ```
 
 Install it through DeepSeek Harness Plugin Market, then restart Harness if prompted. Open **Settings → Pet Companion** to configure it.
